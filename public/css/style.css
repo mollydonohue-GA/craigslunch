@@ -1,0 +1,249 @@
+/*----------------------------------------------------------*/
+/*-------UNIVERSAL STYLING----------------------------------*/
+/*----------------------------------------------------------*/
+body {
+  background-color: #F44336;
+  font-family: 'Lato', sans-serif;
+  color: #161616
+}
+
+/*.backstrip{
+  min-height: 100vh;
+  width: 90%;
+  z-index: -4;
+  margin: 0px auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 100px -1px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 100px -1px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 100px -1px rgba(0,0,0,0.5);
+}*/
+
+h1, h2, h3, h4{
+  font-weight: 900;
+}
+
+h5, h6{
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: #323232;
+}
+
+a: hover {
+  text-decoration: none;
+  color: #083f46;
+}
+
+li{
+  list-style: none;
+}
+
+button {
+  margin: 4px;
+  border-radius: 6px;
+  background-color: #0DBCD4;
+  color: #161616;
+  color: #FFFFFF;
+  text-shadow: 1px 1px #161616;
+}
+
+input {
+  width: 200%;
+  margin-left: 4px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/*----------------------------------------------------------*/
+/*-------HEADER ELEMENTS------------------------------------*/
+/*----------------------------------------------------------*/
+header {
+  background-color: #181818;
+  background-image: url("../images/retro_bkgd.png");
+  position: fixed;
+  top: -70px;
+  width: 100%;
+  height: 120px;
+  border: 5px solid #D32F2F;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-radius: 30px;
+  z-index: 2;
+}
+
+.head{
+  top: 62px;
+  width: 100%;
+  /*padding: 0px 10% 0px 10%;*/
+  margin: 0px auto 0px auto;
+}
+
+.logo {
+  font-family: 'Lobster', cursive;
+}
+
+.slogan {
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  padding: 16px 0px 0px 0px;
+}
+
+.logged-in {
+  background-color: #FFFFFF;
+  margin: 15px auto 0px auto;
+  padding-top: 2px;
+  border-radius: 40px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+.whos-here {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.logInAndOut {
+  float: right;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/*----------------------------------------------------------*/
+/*-------LOGIN ELEMENTS-------------------------------------*/
+/*----------------------------------------------------------*/
+
+.login-blurb {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+
+/*----------------------------------------------------------*/
+/*-------BODY ELEMENTS--------------------------------------*/
+/*----------------------------------------------------------*/
+
+.body-container {
+  position: relative;
+  top: 65px;
+  padding-left: 6%;
+}
+
+.list-title{
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-shadow: 2px 2px #000000;
+  text-align: center;
+  margin: 0px;
+}
+/*-------chosen restaurant list-----------------------------*/
+.chosen{
+  position: relative;
+  display: block;
+  margin: 0px 5% 20px 0px;
+}
+
+.chosen-list {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  overflow: scroll;
+  min-height: 10vh;
+  max-height: 40vh;
+}
+
+#chosen-welcome{
+  text-align: center;
+}
+
+#clear-chosen{
+  width: 100%;
+  display: none;
+}
+
+.clear-chosen{
+  text-align: center;
+}
+
+/*-------overall restaurant list----------------------------*/
+.rest{
+  position: relative;
+  display: block;
+  margin: 0px 0px 20px 0px;
+  height: auto;
+}
+
+.rest-list{
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  overflow: scroll;
+  max-height: 60vh;
+}
+
+.single-rest img{
+  height: 75px;
+  margin-right: 20px;
+  padding: 0px;
+}
+
+.single-rest h4, h5, h6{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+/*-----map styling ----------*/
+.rest-map{
+  background-color: papayawhip;
+  border-radius: 20px;
+  height: 60vh;
+}
+
+/*-----------------------------------------*/
+/*---------FOOTER STYLING------------------*/
+/*-----------------------------------------*/
+
+.foot{
+  display: block;
+  width: 90%;
+  background-color: #D32F2F;
+  position: fixed;
+  bottom: 0%;
+  text-align: center;
+  height: 30px;
+}
+
+
+/*-----------------------------------------*/
+/*---------NEON EFFECT---------------------*/
+/*-----------------------------------------*/
+
+
+.logo {
+  color: #FFFFFF;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s;
+  -webkit-animation: neon 1s ease-in-out infinite alternate;
+  -moz-animation: neon 1s ease-in-out infinite alternate;
+  animation: neon 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes neon {
+  from {
+    text-shadow: 0 0 5px #00BCD4, 0 0 10px #00BCD4, 0 0 15px #00BCD4, 0 0 20px #59c1cf, 0 0 25px #59c1cf, 0 0 30px #59c1cf, 0 0 35px #59c1cf, 0 0 40px #59c1cf;
+  }
+  to {
+    text-shadow: 0 0 2px #00BCD4, 0 0 5px #00BCD4, 0 0 7px #00BCD4, 0 0 10px #59c1cf, 0 0 13px #59c1cf, 0 0 16px #59c1cf, 0 0 19px #59c1cf, 0 0 21px #59c1cf;
+  }
+}
+
+/*---------END NEON EFFECT---------------------*/
